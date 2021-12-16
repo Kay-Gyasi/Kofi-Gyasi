@@ -94,13 +94,13 @@ a[routerLink]:hover{
     }
     
     .mobileMsgBody{
-        font-size: 3.5vw;
+        font-size: 4vw;
         text-align: center;
         margin-left: 8vw;
     }
 
     #services{
-        font-size: 3.5vw;
+        font-size: 4vw;
         margin-left: 8vw;
     }
 
@@ -120,7 +120,7 @@ a[routerLink]:hover{
         display: flex;
         margin-top: 15vw;
         margin-left: 5vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     #sociallinks{
