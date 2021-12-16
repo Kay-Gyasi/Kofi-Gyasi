@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": "dist",
+    "appService.defaultWebAppToDeploy": "/subscriptions/0fb9c602-e427-4af0-919e-61a07e96764e/resourceGroups/rgApi/providers/Microsoft.Web/sites/kaygyasi"
+}
