@@ -1,0 +1,54 @@
+.pics{
+    margin-top: 3vw;
+    margin-left: 2vw;
+    width: 35vw;
+    height: 37vw;
+    border-left: white;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    position: absolute;
+    left: 62vw;
+}
+
+.card-body{
+    background-color: rgb(54, 54, 56);
+}
+
+#msg{
+    margin-left: 14vw;
+    font-size: 3vw;
+}
+
+#msgblock{
+    margin-top: 5vw;
+    float: left;
+    margin-right: 45vw;
+}
+
+.msgbody{
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+
+#msgbtn{
+    margin-left: 24vw;
+    border-radius: 2.5vw;
+    font-size: 1.3vw;
+    width: 15vw;
+    height: 3.5vw;
+}
+
+a[routerLink]{
+    color: white;
+}
+
+a[routerLink]:hover{
+    text-decoration: none;
+}
+
+#footer{
+    position: relative;
+    top: 8vw;
+}

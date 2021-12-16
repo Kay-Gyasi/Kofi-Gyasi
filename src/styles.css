@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(54, 54, 56);
+    color: white;
+}
+
+.nav-item:hover{
+    color: rgb(155, 81, 81);
+    cursor: pointer;
+}
+
+a[routerLink]{
+    color: white;
+}
+
+a[routerLink]:hover{
+    color: rgb(155, 81, 81);
+}

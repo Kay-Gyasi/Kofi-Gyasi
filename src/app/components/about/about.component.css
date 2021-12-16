@@ -1,0 +1,43 @@
+.layers{
+    height: 30vw;
+}
+
+.head{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+.body{
+    text-align: justify;
+    margin-top: 2.5vw;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+#umat{
+    text-decoration: underline;
+}
+
+.second{
+    margin-top: 10vw;
+}
+
+.firstbody{
+    margin-top: 5vw;
+}
+
+.picCard{
+    background-color: rgb(54, 54, 56);
+    border: none;
+    opacity: 95%;
+}
+
+#footer{
+    position: relative;
+}
+
+#pic{
+    border-radius: 0.4vw;
+}

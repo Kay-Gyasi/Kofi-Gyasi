@@ -1,0 +1,49 @@
+.card{
+    height: 50vw;
+}
+
+.margin{
+    height: 0vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+}
+
+#footerInter{
+    position: relative;
+    top: 20vw;
+}
+
+#send{
+    color: black;
+}
+
+.form-control{
+    width: 35vw;
+    height: 3vw;
+}
+
+input{
+    font-size: 1.1vw;
+}
+
+select{
+    font-size: 1.1vw;
+}
+
+#textarea{
+    height: 10vw;
+}
+
+#header{
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#text{
+    display: flex;
+    justify-content: justify;
+    font-size: 2vw;
+    margin-top: 8vw;
+}

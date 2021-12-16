@@ -1,0 +1,89 @@
+<div class="container row margin">
+    <div class="container col">
+        <p id="header">Contact me</p>
+        <form #interactionForm="ngForm" novalidate (ngSubmit)="onSubmit(commentClass)">
+            <!-- {{ interactionForm.value | json }}<br> -->
+            <!-- {{ commentClass | json}} -->
+
+            <div class="alert alert-danger" *ngIf="errorMsg">
+                {{ errorMsg }}
+            </div>
+
+            <!-- Name field -->
+            <div class="form-group">
+                <label for="name">Name<span style="color:rgb(204, 70, 70);">&ast;</span></label>
+                <input class="form-control" type="text" placeholder="Enter your name" id="name" 
+                 name="name" required #name="ngModel" [(ngModel)]="commentClass.name" 
+                 [class.is-invalid]="name.invalid && name.touched" autocomplete="off">
+
+                 <small class="text-danger" *ngIf="name.invalid && name.touched">Field is required</small>
+            </div>
+
+            <!-- Email field-->
+            <div class="form-group">
+                <label for="email">Email<span style="color:rgb(204, 70, 70);">&ast;</span></label>
+                <input class="form-control" type="email" placeholder="Enter your email address" id="email" 
+                name="email" required #email="ngModel" [(ngModel)]="commentClass.email"
+                [class.is-invalid]="email.invalid && email.touched" autocomplete="off"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+                <div *ngIf="email.errors && (email.valid || email.touched)">
+                    <small class="text-danger" *ngIf="email.errors['required']">Field is required</small>
+                    <small class="text-danger" *ngIf="email.errors['pattern']">Invalid email</small>
+                </div>
+            </div>
+
+            <!-- Phone number field -->
+            <div class="form-group">
+                <label for="num">Phone Number<span style="color:rgb(204, 70, 70);">&ast;</span></label>
+                <input class="form-control" type="tel" placeholder="eg. 0557833216" id="num"
+                name="num" #phone="ngModel" [(ngModel)]="commentClass.phone"
+                [class.is-invalid]="phone.invalid && phone.touched" pattern="[0-9]{10}" required autocomplete="off">
+
+                <div *ngIf="phone.errors && (phone.valid || phone.touched)">
+                    <small class="text-danger" *ngIf="phone.errors['required']">Field is required</small>
+                    <small class="text-danger" *ngIf="phone.errors['pattern']">Input must be 10 digits</small>
+                </div>
+            </div>
+
+            <!-- Topic field -->
+            <div class="form-group">
+                <label for="options">Type<span style="color:rgb(204, 70, 70);">&ast;</span></label>
+                <select class="form-control" id="options" name="topic" #topic="ngModel" 
+                [(ngModel)]="commentClass.type" required (blur)="validateTopic(topic.value)"
+                (change)="validateTopic(topic.value)" [class.is-invalid]="descriptionError && topic.touched">
+                    <option value="default" selected>This comment is about...</option>
+                    <option>Business proposal</option>
+                    <option>Advice</option>
+                    <option>Suggestion</option>
+                    <option>Other</option>
+                </select>
+
+                <small class="text-danger" *ngIf="descriptionError && topic.touched">Please select a topic</small>
+            </div>
+
+            <!-- Description field -->
+            <div class="form-group">
+                <label for="textarea">Details<span style="color:rgb(204, 70, 70);">&ast;</span></label>
+                <textarea class="form-control" name="textarea" id="textarea" #textarea="ngModel" 
+                [(ngModel)]="commentClass.details" required 
+                [class.is-invalid]="textarea.invalid && textarea.touched"></textarea>
+
+                <small class="text-danger" *ngIf="textarea.invalid && textarea.touched">Field is required</small>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-group">
+                <button class="form-control btn bg-primary" id="submit" style="color:white; font-size: 1.2vw;"
+                [disabled]="interactionForm.form.invalid || descriptionError">Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="container col">
+        <div id="text">I'm eager to interract with you. Send your business proposals, advice and suggestions 
+        and I'll reach back to you in no time.</div>
+    </div>
+</div>
+
+
+<app-footer id="footerInter"></app-footer>

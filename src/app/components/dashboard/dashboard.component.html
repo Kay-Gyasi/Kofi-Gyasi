@@ -1,0 +1,20 @@
+<div id="msgblock">
+    <h1 id="msg">&lt;Hello, I'm Kofi Gyasi&#47;&gt;</h1><br>
+    <p class="msgbody">{{ introMsg }}</p>
+    <p class="msgbody">Services offered:</p>
+    <ul class="msgbody">
+        <li *ngFor="let item of servicesList">{{ item.name }}</li>
+    </ul><br><br>
+
+    <button id="msgbtn" class="msgbody btn btn-lg btn-primary">
+        <a routerLink="../Resume">View resume&#768;</a>
+    </button>
+</div>
+<div class="card pics bg-dark">
+    <div class="card-body">
+        <img class="d-block w-100 rounded-circle" [src]="cardImage" alt="First slide/">
+    </div>
+</div>
+
+<app-footer id="footer"></app-footer>
+
