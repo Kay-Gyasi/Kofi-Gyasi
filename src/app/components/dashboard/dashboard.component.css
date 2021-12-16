@@ -52,3 +52,86 @@ a[routerLink]:hover{
     position: relative;
     top: 8vw;
 }
+
+#mobileView{
+    display: none;
+}
+
+#mobileFooter{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #mobileView{
+        display: flex;
+        margin-top: 5vw;
+    }
+
+    #mobileMsg{
+        margin-top: 13vw;
+        margin-left: 12vw;
+        margin-bottom: 12vw;
+    }
+
+    .pics{
+        display: none;
+    }
+
+    #msgblock{
+        display: none;
+    }
+
+    .imgContainer{
+        margin-top: 10vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        width: 55vw;
+    }
+    
+    .mobileMsgBody{
+        font-size: 3.5vw;
+        text-align: center;
+        margin-left: 8vw;
+    }
+
+    #services{
+        font-size: 3.5vw;
+        margin-left: 8vw;
+    }
+
+    #mobileMsgBtn{
+        width: 30vw;
+        height: 7vw;
+        font-size: 2.5vw;
+        margin-top: 15vw;
+        margin-left: 35vw;
+    }
+
+    app-footer{
+        display: none;
+    }
+
+    #mobileFooter{
+        display: flex;
+        margin-top: 15vw;
+        margin-left: 5vw;
+    }
+
+    #sociallinks{
+        margin-left: 25vw;
+        margin-top: 10vw;
+    }
+
+    address span{
+        margin-right: 3vw;
+    }
+
+    #at{
+        margin-left: 30vw;
+        font-size: 2vw;
+    }
+}
