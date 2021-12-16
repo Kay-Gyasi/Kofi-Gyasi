@@ -69,9 +69,9 @@ a[routerLink]:hover{
 
     #mobileMsg{
         margin-top: 13vw;
-        margin-left: 12vw;
+        margin-left: 15vw;
         margin-bottom: 12vw;
-        font-size: 6.5vw;
+        font-size: 8.5vw;
     }
 
     .pics{
@@ -106,7 +106,7 @@ a[routerLink]:hover{
 
     #mobileMsgBtn{
         width: 30vw;
-        height: 7vw;
+        height: 14vw;
         font-size: 3vw;
         margin-top: 15vw;
         margin-left: 35vw;
@@ -124,16 +124,17 @@ a[routerLink]:hover{
     }
 
     #sociallinks{
-        margin-left: 25vw;
-        margin-top: 10vw;
+        margin-left: 23vw;
+        margin-top: 14vw;
     }
 
     address span{
-        margin-right: 3vw;
+        margin-right: 4vw;
     }
 
     #at{
-        margin-left: 30vw;
+        margin-left: 35vw;
+        margin-top: 15vw;
         font-size: 2vw;
     }
 }
