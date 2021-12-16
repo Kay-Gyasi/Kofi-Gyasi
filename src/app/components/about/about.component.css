@@ -22,7 +22,6 @@
 
 .second{
     margin-top: 16vw;
-    margin-bottom: 5vw;
 }
 
 .firstbody{
@@ -37,6 +36,7 @@
 
 #footer{
     position: relative;
+    top: 5vw;
 }
 
 #pic{
