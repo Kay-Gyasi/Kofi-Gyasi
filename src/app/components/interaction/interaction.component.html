@@ -74,16 +74,17 @@
 
             <!-- Submit button -->
             <div class="form-group">
-                <button class="form-control btn bg-primary" id="submit" style="color:white; font-size: 1.2vw;"
+                <button class="form-control btn bg-primary" id="submit"
                 [disabled]="interactionForm.form.invalid || descriptionError">Send</button>
             </div>
         </form>
     </div>
-    <div class="container col">
+    <div class="container col eager">
         <div id="text">I'm eager to interract with you. Send your business proposals, advice and suggestions 
         and I'll reach back to you in no time.</div>
     </div>
 </div>
 
+<phone-footer></phone-footer>
 
 <app-footer id="footerInter"></app-footer>

@@ -47,3 +47,63 @@ select{
     font-size: 2vw;
     margin-top: 8vw;
 }
+
+#submit{
+    color:white; 
+    font-size: 1.2vw;
+}
+
+phone-footer{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .eager{
+        display: none;
+    }
+
+    app-footer{
+        display: none;
+    }
+
+    #header{
+        font-size: 7vw;
+    }
+
+    input{
+        font-size: 3.5vw;
+    }
+
+    label{
+        font-size: 3vw;
+        margin-left: 4vw;
+    }
+
+    .form-control{
+        width: 65vw;
+        height: 7vw;
+        margin-left: 4vw;
+    }
+
+    small{
+        font-size: 2vw;
+        margin-left: 4vw;
+    }
+
+    select{
+        font-size: 3vw;
+    }
+
+    #textarea{
+        height: 20vw;
+    }
+
+    #submit{
+        font-size: 3vw;
+    }
+
+    phone-footer{
+        display: flex;
+        margin-top: 120vw;
+    }
+}
