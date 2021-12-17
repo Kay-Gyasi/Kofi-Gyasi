@@ -16,6 +16,7 @@ import { WebprojectsComponent } from './components/webprojects/webprojects.compo
 import { DesktopProjectsComponent } from './components/desktop-projects/desktop-projects.component';
 import { MobileProjectsComponent } from './components/mobile-projects/mobile-projects.component';
 import { DataScienceProjectsComponent } from './components/data-science-projects/data-science-projects.component';
+import { PhoneFooterComponent } from './components/phone-footer/phone-footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DataScienceProjectsComponent } from './components/data-science-projects
     WebprojectsComponent,
     DesktopProjectsComponent,
     MobileProjectsComponent,
-    DataScienceProjectsComponent
+    DataScienceProjectsComponent,
+    PhoneFooterComponent
   ],
   imports: [
     BrowserModule,
