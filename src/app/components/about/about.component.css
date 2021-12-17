@@ -97,4 +97,9 @@ phone-footer{
         margin-left: 9vw;
         width: 80vw;
     }
+
+    phone-footer{
+        display: flex;
+        margin-top: 70vw;
+    }
 }
