@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SharedService } from './shared.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';

@@ -75,7 +75,7 @@
             <!-- Submit button -->
             <div class="form-group">
                 <button class="form-control btn bg-primary" id="submit"
-                [disabled]="interactionForm.form.invalid || descriptionError">Send</button>
+                [disabled]="interactionForm.form.invalid || descriptionError" (click)="reset()">Send</button>
             </div>
         </form>
     </div>

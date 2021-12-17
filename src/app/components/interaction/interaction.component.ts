@@ -36,9 +36,11 @@ export class InteractionComponent implements OnInit {
 
     this.service.PostInteraction(data).subscribe({
       next: data => console.log(data),
-      error: error => this.errorMsg = error.StatusText
-    });  
+      error: error => this.errorMsg = error.StatusText,
+    });
+  }
 
-    alert("Comment Sent");
+  reset(){
+    location.reload();
   }
 }
