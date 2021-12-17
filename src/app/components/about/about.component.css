@@ -69,7 +69,7 @@ phone-footer{
         margin-top: 15vw;
         height: 70vw;
         width: 80vw;
-        margin-left: 7vw;
+        margin-left: 8vw;
     }
 
     .card-text, .head{
@@ -79,7 +79,7 @@ phone-footer{
     .picCard{
         margin-top: 8vw;
         width: 80vw;
-        margin-left: 7vw;
+        margin-left: 8vw;
     }
 
     app-footer{
@@ -87,14 +87,14 @@ phone-footer{
     }
 
     .second{
-        margin-left: 7vw;
+        margin-left: 8vw;
         width: 80vw;
         margin-top: 8vw;
     }
 
     .resource{
         top: 75vw;
-        margin-left: 7vw;
+        margin-left: 8vw;
         width: 80vw;
     }
 }
