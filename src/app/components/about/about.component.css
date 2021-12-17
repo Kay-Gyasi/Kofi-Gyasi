@@ -67,7 +67,7 @@ phone-footer{
     .mob{
         display: flex;
         margin-top: 15vw;
-        height: 60vw;
+        height: 65vw;
         width: 80vw;
         margin-left: 7vw;
     }
@@ -93,7 +93,7 @@ phone-footer{
     }
 
     .resource{
-        top: 60vw;
+        top: 70vw;
         margin-left: 7vw;
         width: 80vw;
     }
