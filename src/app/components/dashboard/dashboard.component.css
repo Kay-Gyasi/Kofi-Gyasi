@@ -69,7 +69,7 @@ a[routerLink]:hover{
 
     #mobileMsg{
         margin-top: 13vw;
-        margin-left: 15vw;
+        margin-left: 17vw;
         margin-bottom: 12vw;
         font-size: 6.5vw;
     }
@@ -87,6 +87,7 @@ a[routerLink]:hover{
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-left: 3vw;
     }
 
     img{
