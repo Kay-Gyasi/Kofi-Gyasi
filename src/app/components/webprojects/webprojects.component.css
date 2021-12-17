@@ -7,3 +7,24 @@
     font-size: 1.2vw;
 }
 
+phone-footer{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .desk{
+        display: none;
+    }
+
+    .info{
+        float: none;
+        width: 60vw;
+        font-size: 3vw;
+        margin-left: 19vw;
+    }
+
+    phone-footer{
+        display: flex;
+    }
+}
+
