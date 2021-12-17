@@ -58,61 +58,59 @@
 </div>
 
 <!--Mobile View-->
-<div>
-    <div class="card col bg-secondary mob viewMob">
-        <div class="card-header head">
-            Who am I?
+<div class="card col bg-secondary mob viewMob">
+    <div class="card-header head">
+        Who am I?
+    </div>
+    <div class="card-body body firstbody">
+        <div class="card-text">
+            My name is Kofi Gyasi. I am currently a Computer Science and 
+            Engineering student at <abbr data-bs-toggle="tooltip" id="umat" title="University of Mines and Technology">UMaT</abbr>
+            in Tarkwa, Ghana. I love coding and my aim is to become a professional
+            developer and a great one at that. You are assured of the best possible service.
         </div>
-        <div class="card-body body firstbody">
+    </div> 
+</div>
+
+<div class="card col picCard viewMob">
+    <img src="../assets/Images/Kofi2.jpg" alt="Picture of Kofi Gyasi" id="pic"/>
+</div>
+
+<div class="row layers second viewMob">
+    <div class="card col bg-secondary" style="margin-right: 1vw;">
+        <div class="card-header head">
+            What I do?
+        </div>
+        <div class="card-body body">
             <div class="card-text">
-                My name is Kofi Gyasi. I am currently a Computer Science and 
-                Engineering student at <abbr data-bs-toggle="tooltip" id="umat" title="University of Mines and Technology">UMaT</abbr>
-                in Tarkwa, Ghana. I love coding and my aim is to become a professional
-                developer and a great one at that. You are assured of the best possible service.
+                <dl>
+                    <dt>Web services</dt>
+                    <dd>I build, maintain and provide additional services for websites,
+                        web apps etc.
+                    </dd>
+                    <dt>Desktop services</dt>
+                    <dd>I provide full stack desktop services. For frontend, I work with
+                        WPF and UWP.
+                    </dd>
+                    <dt>Data Science services</dt>
+                    <dd>I help you find solutions for you business problems by analysing
+                        your business data with data science and machine learning concepts.
+                    </dd>
+                </dl>
             </div>
         </div> 
     </div>
-    
-    <div class="card col picCard viewMob">
-        <img src="../assets/Images/Kofi2.jpg" alt="Picture of Kofi Gyasi" id="pic"/>
+</div>
+
+<div class="card bg-secondary resource viewMob">
+    <div class="card-header head">
+        Resources
     </div>
-    
-    <div class="row layers second viewMob">
-        <div class="card col bg-secondary" style="margin-right: 1vw;">
-            <div class="card-header head">
-                What I do?
-            </div>
-            <div class="card-body body">
-                <div class="card-text">
-                    <dl>
-                        <dt>Web services</dt>
-                        <dd>I build, maintain and provide additional services for websites,
-                            web apps etc.
-                        </dd>
-                        <dt>Desktop services</dt>
-                        <dd>I provide full stack desktop services. For frontend, I work with
-                            WPF and UWP.
-                        </dd>
-                        <dt>Data Science services</dt>
-                        <dd>I help you find solutions for you business problems by analysing
-                            your business data with data science and machine learning concepts.
-                        </dd>
-                    </dl>
-                </div>
-            </div> 
-        </div>
-    </div>
-    
-    <div class="card bg-secondary resource viewMob">
-        <div class="card-header head">
-            Resources
-        </div>
-        <div class="card-body body head">
-            <ul>
-                <li *ngFor="let skill of resources">{{ skill.name }}</li>
-            </ul>
-        </div> 
-    </div>
+    <div class="card-body body head">
+        <ul>
+            <li *ngFor="let skill of resources">{{ skill.name }}</li>
+        </ul>
+    </div> 
 </div>
 
 <phone-footer></phone-footer>
