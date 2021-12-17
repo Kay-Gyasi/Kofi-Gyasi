@@ -38,5 +38,7 @@ export class InteractionComponent implements OnInit {
       next: data => console.log(data),
       error: error => this.errorMsg = error.StatusText
     });  
+
+    this.commentClass = new Comments("", "", "", "default", "");
   }
 }
