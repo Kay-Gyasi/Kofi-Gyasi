@@ -18,9 +18,10 @@ phone-footer{
 
     .info{
         float: none;
-        width: 60vw;
+        width: 70vw;
         font-size: 3vw;
-        margin-left: 19vw;
+        margin-left: 15vw;
+        margin-top: 15vw;
     }
 
     phone-footer{
