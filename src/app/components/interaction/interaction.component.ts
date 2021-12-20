@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Comments } from 'src/app/comments';
 import { SharedService } from 'src/app/shared.service';
 
@@ -31,16 +32,15 @@ export class InteractionComponent implements OnInit {
     }
   }
 
-  onSubmit(data: Comments){
+  onSubmit(data: Comments, form: NgForm){
     this.submitted = true;
 
     this.service.PostInteraction(data).subscribe({
       next: data => console.log(data),
       error: error => this.errorMsg = error.StatusText,
     });
-  }
 
-  reset(){
-    location.reload();
+    form.reset();
+    //this.commentClass = new Comments("", "", "", "default", "");
   }
 }

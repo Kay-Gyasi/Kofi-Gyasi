@@ -1,7 +1,7 @@
 <div class="container row margin">
     <div class="container col">
         <p id="header">Contact me</p>
-        <form #interactionForm="ngForm" novalidate (ngSubmit)="onSubmit(commentClass)">
+        <form #interactionForm="ngForm" novalidate (ngSubmit)="onSubmit(commentClass, interactionForm)">
             <!-- {{ interactionForm.value | json }}<br> -->
             <!-- {{ commentClass | json}} -->
 
@@ -75,7 +75,7 @@
             <!-- Submit button -->
             <div class="form-group">
                 <button class="form-control btn bg-primary" id="submit"
-                [disabled]="interactionForm.form.invalid || descriptionError" (click)="reset()">Send</button>
+                [disabled]="interactionForm.form.invalid || descriptionError">Send</button>
             </div>
         </form>
     </div>
