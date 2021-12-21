@@ -3,10 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SharedService } from './shared.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormGroup } from '@angular/forms';
-import { CategoryReducer } from './state/store/reducers/category.reducers';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';

@@ -6,6 +6,7 @@ import { LoadAboutAction, LoadAboutSuccessAction, LoadAboutFailureAction } from 
 import { PortfolioActionType } from "../store/enums/enums";
 import { SharedService } from "src/app/shared.service";
 import { of } from "rxjs";
+import { LoadWebFailureAction, LoadWebProjectsAction, LoadWebSuccessAction } from "../store/actions/web.actions";
 
 @Injectable()
 export class PortfolioEffects{
@@ -31,6 +32,18 @@ export class PortfolioEffects{
                 map(data => new LoadAboutSuccessAction(data)),
                 catchError(error => of(new LoadAboutFailureAction(error)))
             ))
+    ));
+
+    loadProjects$ = createEffect(() => this.actions$
+    .pipe(
+        ofType<LoadWebProjectsAction>(PortfolioActionType.LOAD_PROJECTS),
+        mergeMap(
+            () => this.service.GetProjects()
+            .pipe(
+                map(data => new LoadWebSuccessAction(data)),
+                catchError(error => of(new LoadWebFailureAction(error)))
+            )
+        )
     ));
 
     constructor(private actions$:Actions, private service:SharedService){}
