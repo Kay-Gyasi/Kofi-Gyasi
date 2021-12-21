@@ -50,7 +50,7 @@
             </div>
             <div class="card-body body">
                 <ul>
-                    <li *ngFor="let skill of resources">{{ skill.name }}</li>
+                    <li *ngFor="let skill of resources$ | async">{{ skill.name }}</li>
                 </ul>
             </div> 
         </div>
@@ -108,7 +108,7 @@
     </div>
     <div class="card-body body head">
         <ul>
-            <li *ngFor="let skill of resources">{{ skill.name }}</li>
+            <li *ngFor="let skill of resources$ | async">{{ skill.name }}</li>
         </ul>
     </div> 
 </div>
