@@ -4,6 +4,7 @@ import { SharedService } from './shared.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
+import { CategoryReducer } from './state/store/reducers/category.reducers';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,12 @@ import { DesktopProjectsComponent } from './components/desktop-projects/desktop-
 import { MobileProjectsComponent } from './components/mobile-projects/mobile-projects.component';
 import { DataScienceProjectsComponent } from './components/data-science-projects/data-science-projects.component';
 import { PhoneFooterComponent } from './components/phone-footer/phone-footer.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './state/store/reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { PortfolioEffects } from './state/effects/portfolio.effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -38,7 +45,10 @@ import { PhoneFooterComponent } from './components/phone-footer/phone-footer.com
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    EffectsModule.forRoot([PortfolioEffects]),
+    StoreModule.forRoot(reducers),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]
