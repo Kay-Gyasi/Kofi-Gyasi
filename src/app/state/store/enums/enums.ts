@@ -7,7 +7,7 @@ export enum PortfolioActionType{
     LOAD_SKILLS_SUCCESS = '[ABOUT] Load Skill Success',
     LOAD_SKILLS_FAILURE = '[ABOUT] Load Skill Failure',
 
-    LOAD_PROJECTS = '[WEB] Load Skiils',
-    LOAD_PROJECTS_SUCCESS = '[WEB] Load Skills Success',
-    LOAD_PROJECTS_FAILURE = '[WEB] Load Skiils Failure'
+    LOAD_PROJECTS = '[WEB] Load Projects',
+    LOAD_PROJECTS_SUCCESS = '[WEB] Load Projects Success',
+    LOAD_PROJECTS_FAILURE = '[WEB] Load Projects Failure'
 }
