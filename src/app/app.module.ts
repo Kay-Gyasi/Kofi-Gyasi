@@ -21,6 +21,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { PortfolioEffects } from './state/effects/portfolio.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
+import { AlertifyService } from './service/alertify.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { environment } from 'src/environments/environment';
     StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
-  providers: [SharedService],
+  providers: [SharedService, AlertifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Comments } from 'src/app/comments';
 import { SharedService } from 'src/app/shared.service';
+import { AlertifyService } from 'src/app/service/alertify.service';
 
 @Component({
   selector: 'app-interaction',
@@ -10,7 +11,7 @@ import { SharedService } from 'src/app/shared.service';
 })
 export class InteractionComponent implements OnInit {
 
-  constructor(private service:SharedService) { }
+  constructor(private service:SharedService, private alertify: AlertifyService) { }
 
   descriptionError = true;
 
@@ -39,6 +40,8 @@ export class InteractionComponent implements OnInit {
       next: data => console.log(data),
       error: error => this.errorMsg = error.StatusText,
     });
+
+    this.alertify.success("Comment sent");
 
     form.reset();
     //this.commentClass = new Comments("", "", "", "default", "");

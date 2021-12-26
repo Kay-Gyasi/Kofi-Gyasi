@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* making alertify themes and css globally available */
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
 body{
     background-color: rgb(54, 54, 56);
     color: white;
@@ -16,3 +21,4 @@ a[routerLink]{
 a[routerLink]:hover{
     color: rgb(155, 81, 81);
 }
+
