@@ -37,11 +37,10 @@ export class InteractionComponent implements OnInit {
     this.submitted = true;
 
     this.service.PostInteraction(data).subscribe({
-      next: data => console.log(data),
+      next: data => {console.log(data), this.alertify.success("Comment sent");
+    },
       error: error => this.errorMsg = error.StatusText,
     });
-
-    this.alertify.success("Comment sent");
 
     form.reset();
     //this.commentClass = new Comments("", "", "", "default", "");
