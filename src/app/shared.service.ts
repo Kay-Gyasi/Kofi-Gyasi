@@ -7,7 +7,7 @@ import { Comments } from './comments';
   providedIn: 'root'
 })
 export class SharedService {
-  readonly apiUrl = "https://portfolioapi20211215203700.azurewebsites.net/api/";
+  readonly apiUrl = "http://localhost:81/api/";
 
   constructor(private http:HttpClient) { }
 
@@ -54,7 +54,7 @@ export class SharedService {
     .append('email', info.email)
     .append('phone', info.phone)
     .append('type', info.type)
-    .append('details', info.details); 
+    .append('details', info.details);
 
     return this.http.post<Comments>(this.apiUrl+"Interactions/PostInteraction/"+info, info, {headers:headers, params: params})
     .pipe(catchError(this.errorHandler))
