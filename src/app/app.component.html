@@ -11,10 +11,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" routerLink="web-projects" id="web">Web</a>
-              <a class="dropdown-item">Desktop</a>
-              <a class="dropdown-item">Mobile</a>
-              <a class="dropdown-item">Data Science</a>
+              <a class="dropdown-item" routerLink="web-projects/web" id="web">Web</a>
+              <a class="dropdown-item" routerLink="desktop-projects/desktop" id="desktop">Desktop</a>
+              <a class="dropdown-item" routerLink="data-projects/data" id="data">Data Science</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" routerLink="Interaction" id="inter">Let's interact</a>
             </div>
@@ -27,7 +26,7 @@
 </div>
 
 <div class="container" id="mobile">
-  <div class="row nav-item" id="menu" role="button" data-toggle="collapse" data-target="#show" 
+  <div class="row nav-item" id="menu" role="button" data-toggle="collapse" data-target="#show"
   aria-expanded="false" aria-controls="show">
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -41,9 +40,9 @@
       <div class="row-fluid item nav-item dropdown" data-target="#proj" data-toggle="collapse"
       aria-expanded="false" aria-controls="proj">Projects</div>
       <div id="proj" class="collapse">
-        <div class="row-fluid item nav-item"><a routerLink="web-projects" class="mobileInter">Web</a></div>
-        <div class="row-fluid item nav-item">Mobile</div>
-        <div class="row-fluid item nav-item">Data Science</div>
+        <div class="row-fluid item nav-item"><a routerLink="web-projects/web" class="mobileInter">Web</a></div>
+        <div class="row-fluid item nav-item"><a routerLink="desktop-projects/desktop" class="mobileInter">Desktop</a></div>
+        <div class="row-fluid item nav-item"><a routerLink="data-projects/data" class="mobileInter">Data Science</a></div>
       </div>
       <div class="row-fluid item nav-item"><a routerLink="About" class="nav-link">Profile</a></div>
       <div class="row-fluid item nav-item" style="margin-bottom: 5vw;"><a routerLink="Interaction"

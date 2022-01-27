@@ -11,9 +11,6 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InteractionComponent } from './components/interaction/interaction.component';
 import { WebprojectsComponent } from './components/webprojects/webprojects.component';
-import { DesktopProjectsComponent } from './components/desktop-projects/desktop-projects.component';
-import { MobileProjectsComponent } from './components/mobile-projects/mobile-projects.component';
-import { DataScienceProjectsComponent } from './components/data-science-projects/data-science-projects.component';
 import { PhoneFooterComponent } from './components/phone-footer/phone-footer.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './state/store/reducers';
@@ -22,6 +19,8 @@ import { PortfolioEffects } from './state/effects/portfolio.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 import { AlertifyService } from './service/alertify.service';
+import { DataProjectsComponent } from './components/data-projects/data-projects.component';
+import { DesktopProjectsComponent } from './components/desktop-projects/desktop-projects.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +31,9 @@ import { AlertifyService } from './service/alertify.service';
     FooterComponent,
     InteractionComponent,
     WebprojectsComponent,
-    DesktopProjectsComponent,
-    MobileProjectsComponent,
-    DataScienceProjectsComponent,
-    PhoneFooterComponent
+    PhoneFooterComponent,
+    DataProjectsComponent,
+    DesktopProjectsComponent
   ],
   imports: [
     BrowserModule,

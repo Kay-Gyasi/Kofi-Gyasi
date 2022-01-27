@@ -39,7 +39,7 @@ export class InteractionComponent implements OnInit {
     this.service.PostInteraction(data).subscribe({
       next: data => {console.log(data), this.alertify.success("Comment sent");
     },
-      error: error => this.errorMsg = error.StatusText,
+      error: error => this.errorMsg = "Sorry, the API is down. Kindly call or email me instead",
     });
 
     form.reset();

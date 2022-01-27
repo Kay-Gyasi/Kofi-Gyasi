@@ -16,13 +16,6 @@ export class FooterComponent implements OnInit {
   github = "Github";
 
   ngOnInit(): void {
-    this.GetTwitter();
-  }
-
-  GetTwitter(){
-    return this.service.GetContact(1).subscribe((contact: any) => {
-      this.twitter = contact;
-    })
   }
 
 }

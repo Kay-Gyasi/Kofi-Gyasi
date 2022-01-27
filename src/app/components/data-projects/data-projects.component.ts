@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Store } from '@ngrx/store';
 import { map, Observable } from 'rxjs';
 import { SharedService } from 'src/app/shared.service';
-import { ProjectItems } from 'src/app/state/store/models/web.model';
-import { Store } from '@ngrx/store';
-import { AppState } from 'src/app/state/store/reducers';
 import { LoadWebProjectsAction } from 'src/app/state/store/actions/web.actions';
-import { ActivatedRoute } from '@angular/router';
+import { ProjectItems } from 'src/app/state/store/models/web.model';
+import { AppState } from 'src/app/state/store/reducers';
 
 @Component({
-  selector: 'app-webprojects',
-  templateUrl: './webprojects.component.html',
-  styleUrls: ['./webprojects.component.css']
+  selector: 'app-data-projects',
+  templateUrl: './data-projects.component.html',
+  styleUrls: ['./data-projects.component.css']
 })
-export class WebprojectsComponent implements OnInit {
+export class DataProjectsComponent implements OnInit {
 
   constructor(private service:SharedService, private store: Store<AppState>,
     private route:ActivatedRoute) { }
@@ -40,9 +40,4 @@ export class WebprojectsComponent implements OnInit {
     );
   }
 
-  /* refreshProjectsList(){
-    return this.service.GetProjects().subscribe(data => {
-      this.projects = data;
-    })
-  } */
 }

@@ -11,7 +11,9 @@ const routes: Routes = [
   {path:"Resume", component:ResumeComponent},
   {path:"About", component:AboutComponent},
   {path:"Interaction", component:InteractionComponent},
-  {path:"web-projects", component:WebprojectsComponent},
+  {path:"web-projects/:category", component:WebprojectsComponent},
+  {path:"data-projects/:category", component:WebprojectsComponent},
+  {path:"desktop-projects/:category", component:WebprojectsComponent},
   {path:"", component:DashboardComponent}
 ];
 

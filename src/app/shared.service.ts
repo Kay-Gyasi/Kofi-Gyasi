@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
 import { Comments } from './comments';
+import { CategoryItems } from './state/store/models/category.models';
+import { ProjectItems } from './state/store/models/web.model';
 
 @Injectable({
   providedIn: 'root'
@@ -18,26 +20,26 @@ export class SharedService {
   //#endregion
 
   //#region Categories
-  GetCategories():Observable<any[]>{
-    return this.http.get<any[]>(this.apiUrl+"Categories/GetCategories");
+  GetCategories():Observable<CategoryItems[]>{
+    return this.http.get<CategoryItems[]>('./assets/dashboardServices.json');
   }
   //#endregion
 
   //#region Contacts
-  GetContact(value:any){
+  /* GetContact(value:any){
     return this.http.get(this.apiUrl+"Contacts/GetContact/"+value);
-  }
+  } */
   //#endregion
 
   //#region Projects
-  GetProjects():Observable<any[]>{
-    return this.http.get<any[]>(this.apiUrl+"Projects/GetProjects");
+  GetProjects():Observable<ProjectItems[]>{
+    return this.http.get<ProjectItems[]>("./assets/projects.json");
   }
   //#endregion
 
   //#region Skills
   Skills():Observable<any[]>{
-    return this.http.get<any[]>(this.apiUrl+"Skills/GetSkills");
+    return this.http.get<any[]>("./assets/skills.json");
   }
   //#endregion
 

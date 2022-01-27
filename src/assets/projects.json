@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Hostel Crust Backend",
+    "link": "https://github.com/Kay-Gyasi/Hostel-Crust",
+    "description": "Backend codes for a Pizza and Cake sales business. Runs on SQL Server and ASP.NET Web API. It was developed by a test-driven approach and is very secure, scalable and maintainable.",
+    "imgLink": "https://cdn.pixabay.com/photo/2017/11/19/23/56/hacking-2964100_960_720.jpg",
+    "category": "web"
+  },
+  {
+    "id": 2,
+    "name": "Hostel Crust",
+    "link": "https://github.com/Kay-Gyasi/HostelCrust",
+    "description": "Angular application with signup, login, state management features",
+    "imgLink": "https://cdn.pixabay.com/photo/2015/03/17/11/36/blackboard-677578_960_720.jpg",
+    "category": "web"
+  },
+  {
+    "id": 3,
+    "name": "House Pricing",
+    "link": "https://github.com/Kay-Gyasi/Personal-Development-projects",
+    "description": "Contains my projects that I have done. I wish for all who see them to evaluate and guide me as to what I can do to improve the projects and also myself",
+    "imgLink": "https://cdn.pixabay.com/photo/2015/03/17/11/36/blackboard-677578_960_720.jpg",
+    "category": "data"
+  }
+]
