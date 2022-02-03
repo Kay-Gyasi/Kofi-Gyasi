@@ -1,5 +1,13 @@
 [
   {
+    "id": 4,
+    "name": "Quiz App",
+    "link": "https://github.com/Kay-Gyasi/Quiz-App",
+    "description": "Asp.net blazor, web api, mongoDB project for a quiz app. Highly performant, secure and maintainable",
+    "imgLink": "https://cdn.pixabay.com/photo/2019/05/22/20/06/brainstorm-4222409__340.jpg",
+    "category": "web"
+  },
+  {
     "id": 1,
     "name": "Hostel Crust Backend",
     "link": "https://github.com/Kay-Gyasi/Hostel-Crust",
