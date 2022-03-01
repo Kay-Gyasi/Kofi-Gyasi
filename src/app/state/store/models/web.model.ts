@@ -4,5 +4,6 @@ export interface ProjectItems{
     link: string,
     description: string,
     imgLink: string,
+    demoLink: string,
     category?: string
 }
