@@ -3,7 +3,7 @@
     "id": 4,
     "name": "Quiz App",
     "link": "https://github.com/Kay-Gyasi/Kessewa-Quiz-App",
-    "description": "Asp.net blazor, web api, mongoDB project for a quiz app. Highly performant, secure and maintainable",
+    "description": "Full stack quiz app with a login system, a quiz page, a leaderboard page, and a profile page.",
     "imgLink": "https://cdn.pixabay.com/photo/2019/05/22/20/06/brainstorm-4222409__340.jpg",
     "demoLink": "web-projects/web",
     "category": "web"
