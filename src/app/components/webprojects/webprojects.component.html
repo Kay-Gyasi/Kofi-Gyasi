@@ -1,13 +1,15 @@
 <div class="container-fluid" style="color: #000000">
-    <span class="card info" *ngFor="let x of projects$ | async">
-        <img class="card-img-top" [src]="x.imgLink" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{ x.name }}</h5>
-          <p class="card-text">{{ x.description }}</p>
-          <a [href]="x.link" class="btn btn-primary" target="_blank">See codes</a>
-          <a [href]="x.demoLink" style="float:right;" class="btn btn-primary" target="_blank">Live Demo</a>
-        </div>
+  <div class="row">
+    <span class="card info col-4" *ngFor="let x of projects$ | async">
+      <img class="card-img-top" [src]="x.imgLink" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ x.name }}</h5>
+        <p class="card-text">{{ x.description }}</p>
+        <a [href]="x.link" class="btn btn-primary" target="_blank">See codes</a>
+        <a [href]="x.demoLink" style="float:right;" class="btn btn-primary" target="_blank">Live Demo</a>
+      </div>
     </span>
+  </div>
 </div>
 
 <phone-footer></phone-footer>
