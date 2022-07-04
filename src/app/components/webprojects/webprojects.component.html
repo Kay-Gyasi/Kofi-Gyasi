@@ -1,6 +1,6 @@
 <div class="container-fluid" style="color: #000000">
   <div class="row">
-    <span class="card info col-4" *ngFor="let x of projects$ | async">
+    <span class="card info col-lg-4" *ngFor="let x of projects$ | async">
       <img class="card-img-top" [src]="x.imgLink" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{ x.name }}</h5>
