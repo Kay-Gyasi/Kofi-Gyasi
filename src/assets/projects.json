@@ -1,5 +1,14 @@
 [
   {
+    "id": 5,
+    "name": "Artisan Management Platform",
+    "link": "https://github.com/Kay-Gyasi/Artisan-Management-Platform-UI",
+    "description": "UI built with Blazor WebAssembly for an app that manages the work of artisans.",
+    "imgLink": "https://pixabay.com/photos/pottery-handcraft-clay-art-craft-4618917/",
+    "demoLink": "web-projects/web",
+    "category": "web"
+  },
+  {
     "id": 4,
     "name": "Quiz App",
     "link": "https://github.com/Kay-Gyasi/Kessewa-Quiz-App",
